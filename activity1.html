@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Advanced Selectors</title>
+   <style>
+    input[type="text"]{
+        border:2px solid blue;
+        text-transform: uppercase;
+    }
+
+    input[type="password"]{
+        border:1px solid green;
+    }
+    ul>li{
+        color:saddlebrown;
+    }
+    h3+p{
+        color:blueviolet;
+    }
+    a:hover{
+        color:goldenrod;
+    }
+    li:nth-child(2){
+        background-color: aquamarine;
+    }
+    div:not(.div1){
+        border: 2px dotted red;
+    }
+    li::after{
+        content:"🍮";
+    }
+    #p2::first-letter{
+        font-size: 40px;
+    }
+     li:nth-child(3)::before{
+          content:"🥛" ;
+     }
+
+    </style>
+</head>
+<body>
+    <h4>Advanced Selectors</h4>
+    <input type="text" placeholder="username"><br>
+    <input type="password" placeholder="password"><br>
+    <ul>
+        <li>Tea</li>
+        <li>Coffee</li>
+        <li>Milk</li>
+    </ul>
+    <h3>This is first heading</h3>
+    <p>This is first paragraph element</p>
+    <p id="p2">This is second paragraph element</p>
+    <h4>Pseudo Classes</h4>
+    <a href="#">Hover over me</a>
+   <div class="div1">This is first division</div>
+   <div class="div2">This is second division</div>
+</body>
+</html>
